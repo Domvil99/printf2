@@ -5,7 +5,9 @@ static int	count_digits(int n)
 	int	count;
 
 	if (n <= 0)
-		count = 1;
+	{	count = 1;
+		n = -n;
+	}
 	else
 		count = 0;
 	while (n)
